@@ -1,16 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>AVPrental</title>
-</head>
-<body>
-  <!-- Navigation -->
-  
-  <!-- Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>AVPrental</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation-->
+      <!-- /Navigation-->
+    </header>
+    <main>
+      <!-- Showcase -->
+      <section class="container-fluid showcase p-0 position-relative">
+        <img
+          class="img-fluid w-100 h-100"
+          src="./img/banner-video.png"
+          alt="AVP rental video"
+        />
+        <!-- Overlay -->
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+        <!-- Text Overlay -->
+        <div
+          class="text-overlay position-absolute top-50 start-0 w-100 text-center text-white"
+        >
+          <div class="container">
+            <h1 class="text-uppercase fw-bold">
+              Обслуживание буровой техники <br />
+              Аренда буровой и техники
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- /Showcase -->
+      <!-- Statistics -->
+      <section class="w-100 statistics z-1">
+        <div class="container">
+          <div class="row justify-content-center gap-3">
+            <!-- 1 -->
+            <div
+              class="col-12 col-md-3 statistic d-flex align-items-center gap-4 px-4"
+            >
+              <img
+                class="statistic-img"
+                src="./img/statistics1.svg"
+                alt="завершенных объектов"
+              />
+              <div>
+                <h3 class="font-bold fs-2">100+</h3>
+                <p class="fs-5">завершенных объектов</p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="col-12 col-md-3 statistic d-flex align-items-center gap-4 px-4"
+            >
+              <img
+                class="statistic-img"
+                src="./img/statistics2.svg"
+                alt="завершенных объектов"
+              />
+              <div>
+                <h3 class="font-bold fs-2">23+</h3>
+                <p class="fs-5">профессиональных команд</p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="col-12 col-md-3 statistic d-flex align-items-center gap-4 px-4"
+            >
+              <img
+                class="statistic-img"
+                src="./img/statistics3.svg"
+                alt="завершенных объектов"
+              />
+              <div>
+                <h3 class="font-bold fs-2">15+</h3>
+                <p class="fs-5">отличных буровых машин</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Statistics -->
+      <!-- About Company -->
+      <section id="company" class="company">
+        <div class="container position-relative">
+          <img
+            class="rectange"
+            src="./img/Rectangle.png"
+            alt="rectange image"
+          />
+          <h2 class="text-center fw-medium" style="color: #2c3878">
+            О компании
+          </h2>
+          <div class="row my-4">
+            <!-- img -->
+            <div
+              class="col-12 col-lg-6 d-flex justify-content-center mb-3 mb-lg-0"
+            >
+              <img
+                src="./img/about.png"
+                alt="О компании"
+                style="width: 100%; max-width: 556px; height: auto"
+              />
+            </div>
+            <!-- text -->
+            <div class="col-12 col-lg-6" style="color: #696969">
+              <p>
+                Здравствуйте уважаемые дамы и господа! <br />
+                Позвольте мне рекомендовать Вам нашу компанию "AVP Rental Group
+                UC", которая с 2012 года специализируется на поставке буровых
+                машин и оборудования. Мы предлагаем широкий ассортимент
+                высококачественных буровых машин и комплектующих для различных
+                видов бурения.
+              </p>
+              <p class="mt-2">
+                Наша Деятельность: <br />
+                — Поставка буровых машин и оборудования <br />
+                — Обслуживание и техническая поддержка оборудования <br />
+                — Проведение работ по бурению с использованием нашего
+                оборудования
+              </p>
+              <p>
+                Преимущества:<br />
+                — Многолетний опыт и надежность <br />
+                — Высокое качество оборудования <br />
+                — Профессиональный подход к каждому заказчику <br />
+                — Команда опытных специалистов
+              </p>
+              <!-- Responsive row -->
+              <div class="row align-items-center text-center text-md-start">
+                <!-- Button -->
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <a
+                    href="https://www.mirtorg.uz/"
+                    class="btn btn-outline-primary px-1 py-2 button"
+                    target="_blank"
+                  >
+                    Узнать больше
+                  </a>
+                </div>
+
+                <!-- Image -->
+                <div
+                  class="col-12 col-md-2 mb-3 mb-md-0 d-flex justify-content-center"
+                >
+                  <div class="circle p-0">
+                    <img
+                      class="object-fit"
+                      style="width: 110px; height: 100px"
+                      src="./img/seo.jpg"
+                      alt="DI LUOCHEN CEO of AVP GROUP"
+                    />
+                  </div>
+                </div>
+                <!-- Text -->
+                <div class="col-12 col-md-5">
+                  <p class="text-uppercase mb-0 seo fw-bold">DI LUOCHEN</p>
+                  <p class="text-uppercase w-100 seo">CEO of AVP GROUP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Company -->
+      <!-- Services  -->
+      <section class="pt-5" style="background-color: #f0f0f0">
+        <div class="container-fluid text-center">
+          <h2 class="fs-3 fw-medium mb-0" style="color: #2c3878">Услуги</h2>
+          <p
+            class="text-uppercase mb-0 fw-medium"
+            style="font-size: 24px; color: #2c3878"
+          >
+            "AVP RENTAL GROUP UC" ГАРАНТИРУЕТ ВАМ ВЫСОЧАЙШЕЕ КАЧЕСТВО
+          </p>
+          <p style="color: #2c3878; font-size: 19px; margin-bottom: 30px">
+            Передовые технологии Китая и их опытные мастера готовы помочь вам
+            и поделиться идеями
+          </p>
+          <!-- Service column -->
+          <div class="container">
+            <div class="row justify-content-center service p-5">
+              <!-- 1 -->
+              <div class="col-md-4 mb-4">
+                <a
+                  href="https://demo-site.uz/domalogica-home/"
+                  class="text-decoration-none"
+                >
+                  <div class="service-card mx-auto position-relative">
+                    <img
+                      src="./img/service1.jpg"
+                      alt="Услуги по бурению скважин"
+                      class="img-fluid"
+                    />
+                    <h5
+                      class="title w-100 position-absolute top-50 start-50 translate-middle text-uppercase fw-bold text-white text-center"
+                    >
+                      Услуги по бурению<br />скважин
+                    </h5>
+                    <div class="service-overlay">
+                      <div class="service-border">
+                        <h3 style="font-size: 20px; margin-bottom: 20px">
+                          Услуги по бурению скважин
+                        </h3>
+                        <p class="m-0">
+                          Мы предлагаем профессиональные услуги по бурению
+                          скважин любой сложности. Наш опытный персонал
+                          и современное оборудование гарантируют качественное
+                          выполнение работ в срок.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 2 -->
+              <div class="col-md-4 mb-4">
+                <a
+                  href="https://demo-site.uz/domalogica-home/"
+                  class="text-decoration-none"
+                >
+                  <div class="service-card mx-auto position-relative">
+                    <img
+                      src="./img/service2.jpg"
+                      alt="Услуги по бурению скважин"
+                      class="img-fluid"
+                    />
+                    <h5
+                      class="title w-100 position-absolute top-50 start-50 translate-middle text-uppercase fw-bold text-white text-center"
+                    >
+                      Аренда буровых <br />
+                      станков
+                    </h5>
+                    <div class="service-overlay">
+                      <div class="service-border">
+                        <h3 style="font-size: 20px; margin-bottom: 20px">
+                          Услуги по бурению скважин
+                        </h3>
+                        <p class="m-0">
+                          Мы предлагаем профессиональные услуги по бурению
+                          скважин любой сложности. Наш опытный персонал
+                          и современное оборудование гарантируют качественное
+                          выполнение работ в срок.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 3 -->
+              <div class="col-md-4 mb-4">
+                <a
+                  href="https://demo-site.uz/domalogica-home/"
+                  class="text-decoration-none"
+                >
+                  <div class="service-card mx-auto position-relative">
+                    <img
+                      src="./img/service3.jpg"
+                      alt="Услуги по бурению скважин"
+                      class="img-fluid"
+                    />
+                    <h5
+                      class="title w-100 position-absolute top-50 start-50 translate-middle text-uppercase fw-bold text-white text-center"
+                    >
+                      Распродажа
+                    </h5>
+                    <div class="service-overlay">
+                      <div class="service-border">
+                        <h3 style="font-size: 20px; margin-bottom: 20px">
+                          Услуги по бурению скважин
+                        </h3>
+                        <p class="m-0">
+                          Мы предлагаем профессиональные услуги по бурению
+                          скважин любой сложности. Наш опытный персонал
+                          и современное оборудование гарантируют качественное
+                          выполнение работ в срок.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /Services  -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
