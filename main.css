@@ -71,6 +71,13 @@ body {
   height: 90%;
 }
 
+.rectange1 {
+  position: absolute;
+  top: 0px;
+  right: 600px;
+  height: 100%;
+}
+
 .seo {
   color: #2c3878;
   font-size: 20px;
@@ -83,7 +90,7 @@ body {
 }
 
 .service {
-  height: 433px;
+  height: fit-content;
   width: 100%;
 }
 
