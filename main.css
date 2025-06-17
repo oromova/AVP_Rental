@@ -142,6 +142,78 @@ body {
   padding: 10px;
 }
 
+.equipment {
+  background-color: rgba(44, 56, 120, 1);
+  height: fit-content;
+  padding: 30px 100px;
+  position: relative;
+}
+
+.rectangle-blue {
+  position: absolute;
+  top: 0;
+  bottom: 30;
+  right: 200px;
+  
+}
+
+.equipment-box {
+  width: 307px;
+  height: 410px;
+  color: rgba(44, 56, 120, 1); 
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.equipment-img {
+  width: 307px;
+  height: 223px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.equipment-title {
+  font-size: 18px;
+}
+
+.equipment-subtitle {
+  font-size: 12px;
+}
+
+.equipment-btn {
+  border-radius: 8px;
+  color: rgba(44, 56, 120, 1);
+  border: 2px solid rgba(44, 56, 120, 1);
+  background-color: #fff;
+}
+
+.equipment-left {
+  width: 44px;
+  height: 46px;
+  border: 2px solid rgba(44, 56, 120, 1);
+  font-size: 28px;
+  font-weight: 600;
+  position: absolute;
+  top: 170px;
+  left: -25px;
+  background-color: #fff;
+}
+
+.equipment-right {
+  width: 44px;
+  height: 46px;
+  border: 2px solid rgba(44, 56, 120, 1);
+  font-size: 28px;
+  font-weight: 600;
+  position: absolute;
+  top: 170px;
+  right: -25px;
+  background-color: #fff;
+}
+
 .gallery-img {
   transition: transform 0.3s ease;
   cursor: pointer;
