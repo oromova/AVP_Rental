@@ -4,6 +4,32 @@ body {
   padding: 0;
 }
 
+/* Navlink */
+.custom-nav-link {
+  color: black !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: rgba(44, 56, 120, 1) !important;
+  border-bottom: 2px solid rgba(44, 56, 120, 1);
+}
+
+.custom-nav-link.active {
+  color: rgba(44, 56, 120, 1) !important;
+  border-bottom: 2px solid rgba(44, 56, 120, 1);
+}
+
+.contact-btn {
+  background-color: rgba(44, 56, 120, 1);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
 .showcase {
   height: 564px;
 }
@@ -145,7 +171,7 @@ body {
 .equipment {
   background-color: rgba(44, 56, 120, 1);
   height: fit-content;
-  padding: 30px 100px;
+  width: 100%;
   position: relative;
 }
 
@@ -154,22 +180,19 @@ body {
   top: 0;
   bottom: 30;
   right: 200px;
-  
 }
 
 .equipment-box {
   width: 307px;
-  height: 410px;
-  color: rgba(44, 56, 120, 1); 
+  height: fit-content;
+  color: rgba(44, 56, 120, 1);
   background-color: white;
   border-radius: 8px;
-  position: relative;
-
   transition: transform 0.5s ease-in-out;
 }
 
 .equipment-img {
-  width: 307px;
+  width: 100%;
   height: 223px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -190,28 +213,23 @@ body {
   background-color: #fff;
 }
 
-.equipment-left {
+.equipment-arrow {
   width: 44px;
   height: 46px;
   border: 2px solid rgba(44, 56, 120, 1);
   font-size: 28px;
   font-weight: 600;
-  position: absolute;
-  top: 170px;
-  left: -25px;
   background-color: #fff;
 }
 
 .equipment-right {
-  width: 44px;
-  height: 46px;
-  border: 2px solid rgba(44, 56, 120, 1);
-  font-size: 28px;
-  font-weight: 600;
   position: absolute;
-  top: 170px;
-  right: -25px;
-  background-color: #fff;
+  right: 100px;
+}
+
+.equipment-left {
+  position: absolute;
+  left: 80px;
 }
 
 .gallery-img {
@@ -225,4 +243,35 @@ body {
 .footer {
   background-color: rgba(44, 56, 120, 1);
   height: fit-content;
+}
+
+/* Responsive equipment carousel */
+@media (max-width: 992px) {
+  .equipment .equipment-box {
+    flex: 0 0 80%;
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .equipment .equipment-box {
+    flex: 0 0 100%;
+    max-width: 50%;
+  }
+
+  .equipment {
+    padding: 1rem !important;
+  }
+
+  .equipment .equipment-title {
+    font-size: 1.2rem;
+  }
+
+  .equipment .equipment-subtitle {
+    font-size: 1rem;
+  }
+
+  .equipment-btn {
+    font-size: 0.9rem;
+  }
 }
