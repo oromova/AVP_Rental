@@ -130,6 +130,7 @@
                     type="text"
                     class="form-control"
                     id="name"
+                    name="name"
                     placeholder="Ваше имя"
                     required
                   />
@@ -142,6 +143,7 @@
                     id="phone"
                     placeholder="+998 90 123 45 67"
                     required
+                    name="phone"
                   />
                 </div>
                 <div class="mb-3">
@@ -149,6 +151,7 @@
                   <textarea
                     class="form-control"
                     id="message"
+                    name="message"
                     rows="3"
                     placeholder="Ваше сообщение"
                   ></textarea>
@@ -165,7 +168,6 @@
           </div>
         </div>
       </div>
-
       <!-- /Navigation-->
     </header>
     <main>
@@ -900,18 +902,18 @@
               class="col-12 col-md-6 d-flex flex-column align-items-end text-end"
             >
               <p>Свяжитесь с нами ниже, чтобы работать вместе</p>
-              <a href="/">
-                <button
-                  class="px-3 py-2 text-white border-0"
-                  style="
-                    border-radius: 8px;
-                    background-color: rgba(40, 117, 183, 1);
-                    margin-bottom: 120px;
-                  "
-                >
-                  Связаться с нами
-                </button>
-              </a>
+              <button
+                class="px-3 py-2 text-white border-0"
+                style="
+                  border-radius: 8px;
+                  background-color: rgba(40, 117, 183, 1);
+                  margin-bottom: 120px;
+                "
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+              >
+                Связаться с нами
+              </button>
 
               <div class="d-flex gap-3 mt-2">
                 <a href="https://www.facebook.com/">

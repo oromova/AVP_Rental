@@ -48,10 +48,11 @@ $(document).ready(function () {
     $.ajax({
       url: API,
       method: "POST",
-      data: {
+      contentType: "application/json",
+      data: JSON.stringify({
         chat_id: CHAT_ID,
         text: text,
-      },
+      }),
       success: function () {
         alert("Сообщение успешно отправлено!");
         $("#telegramForm")[0].reset();
